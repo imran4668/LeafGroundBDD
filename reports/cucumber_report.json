@@ -1,0 +1,261 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "navigate-to-alert-page-in-leafground;open-leafground-and-navigate-to-every-alert-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Open LeafGround and navigate to every alert page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 521541000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open the LeafGround homepage",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3420689399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I navigate to the \"Alert\" page",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 729900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see the \"Alert\" page",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 482399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I trigger the simple alert",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 233799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see and accept the simple alert",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 186499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I trigger the confirm alert",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 200100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should see and accept the confirm alert",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I trigger the sweet alert (simple dialog)",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 396700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see and close the sweet alert",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 298899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I trigger the sweet modal dialog",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 891700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see and close the sweet modal dialog",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 268700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I trigger the prompt alert",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 152600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see, enter text, and accept the prompt alert",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I trigger the sweet alert (confirmation)",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 137500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should see and confirm the sweet alert",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:75"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 194500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I trigger the minimize and maximize dialog",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 145300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I should see and close the dialog",
+            "match": {
+              "location": "src\\steps\\alert.steps.ts:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 179799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 273757500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "navigate-to-alert-page-in-leafground",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Navigate to Alert Page in LeafGround",
+    "tags": [],
+    "uri": "features\\leafGround.feature"
+  }
+]
