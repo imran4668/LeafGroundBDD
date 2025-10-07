@@ -31,7 +31,7 @@ jobs:
           $jiraEmail = "${{ secrets.JIRA_EMAIL }}"
           $jiraToken = "${{ secrets.JIRA_API_TOKEN }}"
           $issueKey = "SCRUM-1"
-          $filePath = "playwright-report/index.html"
+          $filePath = "reports/cucumber_report.html"
 
           $base64Auth = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("${jiraEmail}:${jiraToken}"))
 
