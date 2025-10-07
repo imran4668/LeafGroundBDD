@@ -8,7 +8,6 @@ on:
 
 jobs:
   test:
-    timeout-minutes: 60
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,7 +25,7 @@ jobs:
       - name: Run Playwright tests
         run: npm test
 
-      - name: Upload test report to Jira (PowerShell)
+      - name: Upload Playwright report to Jira
         shell: pwsh
         run: |
           $jiraEmail = "${{ secrets.JIRA_EMAIL }}"
@@ -34,7 +33,7 @@ jobs:
           $issueKey = "SCRUM-1"
           $filePath = "playwright-report/index.html"
 
-          $base64Auth = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("$jiraEmail:$jiraToken"))
+          $base64Auth = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("${jiraEmail}:${jiraToken}"))
 
           Invoke-WebRequest -Uri "https://imran023786.atlassian.net/rest/api/3/issue/$issueKey/attachments" `
                             -Method Post `
