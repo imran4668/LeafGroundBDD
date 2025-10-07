@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":" cucumber-js test"
+    "test": " cucumber-js test",
+    "regression": "cucumber-js test --tags @regression"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,9 @@
     "@playwright/test": "^1.55.1",
     "@types/node": "^24.6.2",
     "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "playwright": "^1.55.1"
   }
 }
