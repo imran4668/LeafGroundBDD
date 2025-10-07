@@ -19,9 +19,12 @@ jobs:
       run: npx playwright install
     - name: Run Playwright tests
       run: npm test
-    - uses: actions/upload-artifact@v4
-      if: ${{ !cancelled() }}
-      with:
-        name: reports
-        path: reports
-        retention-days: 30
+    - name: Upload test report to Jira
+  run: |
+    curl -D- \
+      -u ${{ secrets.JIRA_EMAIL }}:${{ secrets.JIRA_API_TOKEN }} \
+      -X POST \
+      -H "X-Atlassian-Token: no-check" \
+      -F "file=@playwright-report/index.html" \
+      "https://imran023786.atlassian.net/rest/api/3/issue/SCRUM-1/attachments"
+
