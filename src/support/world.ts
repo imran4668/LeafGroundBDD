@@ -19,7 +19,7 @@ export class CustomWorld {
     this.context = await this.browser.newContext({viewport:null});
     this.page = await this.context.newPage();
   }else{
-     this.browser = await launcher.launch({ headless: true });
+     this.browser = await launcher.launch({ headless: false });
     this.context = await this.browser.newContext({viewport:{ width: Number(process.env.WIDTH), height: Number(process.env.HEIGHT) },screen:{ width: Number(process.env.WIDTH), height: Number(process.env.HEIGHT) }});
     this.page = await this.context.newPage();
   }
