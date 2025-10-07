@@ -26,11 +26,17 @@ jobs:
       - name: Run Playwright tests
         run: npm test
 
-      - name: Upload test report to Jira
+      - name: Upload test report to Jira (PowerShell)
+        shell: pwsh
         run: |
-          curl -D- \
-            -u ${{ secrets.JIRA_EMAIL }}:${{ secrets.JIRA_API_TOKEN }} \
-            -X POST \
-            -H "X-Atlassian-Token: no-check" \
-            -F "file=@playwright-report/index.html" \
-            "https://imran023786.atlassian.net/rest/api/3/issue/SCRUM-1/attachments"
+          $jiraEmail = "${{ secrets.JIRA_EMAIL }}"
+          $jiraToken = "${{ secrets.JIRA_API_TOKEN }}"
+          $issueKey = "SCRUM-1"
+          $filePath = "playwright-report/index.html"
+
+          $base64Auth = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes("$jiraEmail:$jiraToken"))
+
+          Invoke-WebRequest -Uri "https://imran023786.atlassian.net/rest/api/3/issue/$issueKey/attachments" `
+                            -Method Post `
+                            -Headers @{ "X-Atlassian-Token" = "no-check"; "Authorization" = "Basic $base64Auth" } `
+                            -InFile $filePath
