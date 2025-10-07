@@ -15,11 +15,11 @@ export class CustomWorld {
    
     const launcher:BrowserType = process.env.BROWSER === 'firefox' ? firefox :process.env.BROWSER === 'webkit' ? webkit :chromium;
    if(launcher==chromium) {
-   this.browser = await launcher.launch({ headless: true , });
+   this.browser = await launcher.launch({ headless: Boolean(process.env.HEADLESS), });
     this.context = await this.browser.newContext({viewport:null});
     this.page = await this.context.newPage();
   }else{
-     this.browser = await launcher.launch({ headless: false });
+     this.browser = await launcher.launch({headless: Boolean(process.env.HEADLESS) });
     this.context = await this.browser.newContext({viewport:{ width: Number(process.env.WIDTH), height: Number(process.env.HEIGHT) },screen:{ width: Number(process.env.WIDTH), height: Number(process.env.HEIGHT) }});
     this.page = await this.context.newPage();
   }
