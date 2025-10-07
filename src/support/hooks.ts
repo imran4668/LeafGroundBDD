@@ -2,7 +2,7 @@ import { After, AfterAll, Before, BeforeAll, setDefaultTimeout } from "@cucumber
 import { CustomWorld } from "./world";
 import { getWorld, setWorld } from "./pageFixture";
 
-// setDefaultTimeout(60 * 1000);
+setDefaultTimeout(60 * 1000);
 const world=new CustomWorld();
 export let  page:CustomWorld["page"];
 
