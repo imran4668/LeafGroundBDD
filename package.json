@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": " cucumber-js test",
+    "test:rerun":"cucumber-js -p rerun @rerun.txt",
     "regression": "cucumber-js test --tags @regression"
   },
   "keywords": [],
@@ -13,8 +14,8 @@
   "type": "commonjs",
   "devDependencies": {
     "@cucumber/cucumber": "^12.2.0",
-    "@playwright/test": "^1.55.1",
-    "@types/node": "^24.6.2",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.0",
     "ts-node": "^10.9.2"
   },
   "dependencies": {

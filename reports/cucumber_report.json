@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4962783097
+              "duration": 4999793845
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 324107281
+              "duration": 1639683177
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1092320265
+              "duration": 1274974255
             }
           }
         ],
@@ -73,8 +73,9 @@
               "location": "src/steps/alert.steps.ts:26"
             },
             "result": {
-              "status": "passed",
-              "duration": 134140454
+              "status": "failed",
+              "duration": 71975517,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'triggerSimpleAlert')\n    at World.<anonymous> (/Users/Imran/Documents/LeafGround1/LeafGroundBDD/src/steps/alert.steps.ts:27:19)"
             }
           },
           {
@@ -86,8 +87,8 @@
               "location": "src/steps/alert.steps.ts:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 8513955
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -110,8 +111,9 @@
               "location": "src/steps/alert.steps.ts:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 1396803269
+              "status": "failed",
+              "duration": 7640154,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'triggerConfirmAlert')\n    at World.<anonymous> (/Users/Imran/Documents/LeafGround1/LeafGroundBDD/src/steps/alert.steps.ts:36:19)"
             }
           },
           {
@@ -123,8 +125,8 @@
               "location": "src/steps/alert.steps.ts:40"
             },
             "result": {
-              "status": "passed",
-              "duration": 7594850
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -148,7 +150,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 198824
+              "duration": 2426929
             }
           },
           {
@@ -161,7 +163,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 152502
+              "duration": 3406433
             }
           }
         ],
@@ -184,8 +186,9 @@
               "location": "src/steps/alert.steps.ts:60"
             },
             "result": {
-              "status": "passed",
-              "duration": 138150005
+              "status": "failed",
+              "duration": 1792233,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'triggerModelDialog')\n    at World.<anonymous> (/Users/Imran/Documents/LeafGround1/LeafGroundBDD/src/steps/alert.steps.ts:61:19)"
             }
           },
           {
@@ -197,8 +200,8 @@
               "location": "src/steps/alert.steps.ts:64"
             },
             "result": {
-              "status": "passed",
-              "duration": 232175
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -221,8 +224,9 @@
               "location": "src/steps/alert.steps.ts:69"
             },
             "result": {
-              "status": "passed",
-              "duration": 117604139
+              "status": "failed",
+              "duration": 1047172,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'triggerPromptAlert')\n    at World.<anonymous> (/Users/Imran/Documents/LeafGround1/LeafGroundBDD/src/steps/alert.steps.ts:70:19)"
             }
           },
           {
@@ -234,8 +238,8 @@
               "location": "src/steps/alert.steps.ts:73"
             },
             "result": {
-              "status": "passed",
-              "duration": 148401
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -258,8 +262,9 @@
               "location": "src/steps/alert.steps.ts:82"
             },
             "result": {
-              "status": "passed",
-              "duration": 1128138261
+              "status": "failed",
+              "duration": 2980935,
+              "error_message": "TypeError: Cannot read properties of undefined (reading 'triggerSweetDeleteAlert')\n    at World.<anonymous> (/Users/Imran/Documents/LeafGround1/LeafGroundBDD/src/steps/alert.steps.ts:83:28)"
             }
           },
           {
@@ -271,8 +276,8 @@
               "location": "src/steps/alert.steps.ts:86"
             },
             "result": {
-              "status": "passed",
-              "duration": 253365
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
