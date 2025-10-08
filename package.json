@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": " cucumber-js test",
-    "test:rerun":"cucumber-js -p rerun @rerun.txt",
-    "regression": "cucumber-js test --tags @regression"
+    "test": "cucumber-js --config cucumber.json",
+    "test:rerun": "cucumber-js --config cucumber.json -p rerun @rerun.txt",
+    "regression": "cucumber-js --config cucumber.json --tags @regression",
+    "report:generate": "allure generate allure-results --clean -o allure-report",
+    "report:open": "allure open allure-report"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +18,10 @@
     "@cucumber/cucumber": "^12.2.0",
     "@playwright/test": "^1.56.0",
     "@types/node": "^24.7.0",
+    "allure-commandline": "^2.34.1",
+    "allure-cucumberjs": "^3.4.1",
+    "allure-js-commons": "^3.4.1",
+    "allure-playwright": "^3.4.1",
     "ts-node": "^10.9.2"
   },
   "dependencies": {

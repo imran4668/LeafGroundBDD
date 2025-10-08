@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","115","Handle sweet modal dialog","","Wed Oct 08 18:08:09 IST 2025","passed","Wed Oct 08 18:08:09 IST 2025","","","",""
+"","1129","Handle sweet alert (confirmation)","","Wed Oct 08 18:08:09 IST 2025","passed","Wed Oct 08 18:08:10 IST 2025","","","",""
+"","145","Handle simple alert","","Wed Oct 08 18:08:07 IST 2025","passed","Wed Oct 08 18:08:08 IST 2025","","","",""
+"","105","Handle prompt alert","","Wed Oct 08 18:08:09 IST 2025","passed","Wed Oct 08 18:08:09 IST 2025","","","",""
+"","3798","Open LeafGround and navigate to Alert page","","Wed Oct 08 18:08:04 IST 2025","passed","Wed Oct 08 18:08:07 IST 2025","","","",""
+"","1106","Handle confirm alert","","Wed Oct 08 18:08:08 IST 2025","passed","Wed Oct 08 18:08:09 IST 2025","","","",""
+"","2","Handle sweet alert (simple dialog)","","Wed Oct 08 18:08:09 IST 2025","passed","Wed Oct 08 18:08:09 IST 2025","","","",""
